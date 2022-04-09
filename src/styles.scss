@@ -1,0 +1,71 @@
+// Utilities
+
+@import "utilities/fonts";
+@import "utilities/variables";
+@import "utilities/mixins";
+
+// Components
+
+@import "components/blog.scss";
+@import "components/intro.scss";
+@import "components/card.scss";
+@import "components/header.scss";
+@import "components/footer.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: .2s;
+}
+
+html {
+  background-color: $bg-gray;
+}
+
+body {
+  background-color: #fff;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex--justify-flex-end {
+  justify-content: flex-end;
+}
+
+.section__header {
+  font-family: 'Heebo', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+}
+
+.section__header--black {
+  color: #21243D;
+}
+
+.padding-28 {
+  padding: 0 28px;
+}
+
+@media screen and (min-width: 48em) {
+  .row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .section__header {
+    text-align: left;
+  }
+
+  .padding-28 {
+    padding: 0;
+  }
+
+  .section__header--black {
+    padding-left: 6rem;
+  }
+}

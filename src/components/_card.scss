@@ -1,0 +1,65 @@
+.card-section {
+    background-image: url(assets/images/card-section-background.png);
+    background-size: cover;
+    background-position: center;
+    padding: 0 10px 20px 20px;
+}
+
+.card {
+    margin-bottom: 17px;
+    padding: 12px 21px 22px 19px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    filter: drop-shadow(0 4px 10px rgba(187, 225, 250, 0.25));
+}
+
+.card__header {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: left;
+    color: #21243D;
+    margin-bottom: 12px;
+}
+
+.card__info {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23.5px;
+    text-align: left;
+    color: #21243D;
+}
+
+.card__info--border-right {
+    border-right: 1px solid #000;
+    margin-right: 24px;
+}
+
+.card__text {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23.5px;
+    text-align: left;
+    color: #21243D;
+    margin-top: 21px;
+}
+
+@media screen and (min-width: 48em) {
+    .card-section {
+        padding: 0 9rem 20px 6rem;
+    }
+    
+    .card__header {
+        font-size: 26px;
+        line-height: 38.19px;
+    }
+
+    .card__info {
+        font-size: 18px;
+        line-height: 26.44px;
+    }
+}
